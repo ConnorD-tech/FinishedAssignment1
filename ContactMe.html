@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me</title>
+    <!--References the style sheet that affects all pages-->
+    <link href="HomePage.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="banner">
+            <h1>Connor D Portfolio Site</h1>
+            <h4>Contact Me</h4>
+        </div>
+        <div id="left-column">
+            <h3>Navigate</h3>
+            <!---This is the navigation section where the buttons are and below are all the references-->
+            <a href="index.html" class="button">Home</a>
+            <br>
+            <a href="AboutMe.html" class="button">About Me</a>
+            <br>
+            <a href="Projects.html" class="button">My Projects</a>
+        </div>
+        <!--The right column is the entire right side of the page essentially-->
+        <div id="right-column">
+            <header>
+            <h1>Contact Me!</h1>
+        </header>
+        <h2>Provide your info</h2>
+        <!--From line 32 to line 59, it is the structure and integration of the functional email form-->
+        <form action="mailto:connor.donahue@ontariotechu.net" method="post" enctype="text/plain" name="feedbackform">
+            <p>
+                <label for="Fname">First Name:</label>
+                <br>
+                <input type="text" name="Fname" size="32" placeholder="Enter your first name" required>
+            </p>
+            <p>
+                <label for="Lname">Last Name:</label>
+                <br>
+                <input type="text" name="Lname" size="32" placeholder="Enter your last name" required>
+            </p>
+            <p>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" name="email" size="32" placeholder="Enter your email address" required>
+            </p>
+            <p>
+                <label for="subject">Subject:</label>
+                <br>
+                <input type="text" name="subject" size="32" placeholder="Enter your subject" required>
+            </p>
+            <p>
+                <label for="Feedback">Comments</label>
+                <br>
+                <textarea name="Comments" cols="60" rows="7" placeholder="What's on your mind?" required></textarea>
+            </p>
+            <input type="submit" value="Click here to submit the form">
+            <input type="reset" value="Click here to reset the form"?>
+        </form>
+        </div>
+        <!--The clear class style clears float-->
+        <div class="clear"></div>
+        <div id="footer">
+            <h5>® Site by Connor D. All rights reserved.</h5>
+            <h5>Email: connor.donahue@ontariotechu.net</h5>
+            <p>
+                <!--These links are the integration of the CSS validator badges-->
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!"/>
+                </a>
+                
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+                </a>
+
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

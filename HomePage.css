@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+/* Body affects the background which is hiden behind the wrapper */
+body
+{
+background: linear-gradient(45deg, rgb(82, 94, 107), rgb(70, 70, 201));
+font-family: Verdana, Geneva, Arial, sans-serif;
+padding:0px;
+margin:0px;
+height: 100vh;
+}
+/* These are the select headers which are given a base margin-left length to
+    make it have a cleaner look */
+h2,h3,h5,h6,p,li
+{
+margin-left:15px;
+}
+/* Wrapper is the visible background structure behind the content */
+#wrapper
+{
+width: 100%;
+min-height: 100vh;
+margin-left: auto;
+margin-right: auto;
+background-color:LightSlateGrey;
+}
+/* Right column holds all of the pages actual content. All necessary text and videos/images
+    are held within the right column */
+#right-column
+{
+float: right;
+width: 65%;
+height: 600px;
+background-color:LightGray;
+border: 3px solid black;
+border-radius: 5%;
+margin-right: 4%;
+}
+/* Left column is used for only navigation */
+#left-column
+{
+float: left;
+width: 25%;
+background-color:silver;
+height:600px;
+border: 3px solid black;
+border-radius: 5%;
+margin: 5px;
+}
+/* footer holds the legal reservation rights */
+#footer
+{
+height:80px;
+background: linear-gradient(to bottom, rgb(23, 63, 107), rgb(15, 78, 43));
+
+}
+/* banner a.k.a header is at the top of the screen and holds the title */
+#banner
+{
+background: linear-gradient(to bottom, rgb(23, 63, 107), rgb(15, 78, 43));
+height:120px;
+background-color:SlateGrey;
+}
+.box
+{
+height: 33%;
+width: 150px;
+float: left;
+background-color:tan;
+margin: 15px;
+opacity:.5;
+}
+/* clears the floats */
+.clear
+{
+clear: both;
+}
+/* The button has animations along with shading to give it a look that pops */
+.button
+{
+    background-color: rgb(27, 32, 80);
+    color:white;
+    padding: 10px 20px;
+    border: 2px;
+    border-color: black;
+    margin: 8px;
+    opacity: 0.75;
+    border-radius: 15%;
+    margin-left: 10px;
+    height: 50px;
+    width: auto;
+    box-shadow: 3px 8px 8px black;
+    background: radial-gradient(rgb(50, 60, 147), rgb(39, 38, 38));
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* actions that perform when hovering over the button */
+.button:hover
+{
+    opacity: 1;
+    animation: shape-shift 0.15s forwards;
+    background-color: rgb(80, 80, 182);
+
+}
+/* events that occur during the respective duration of the animation */
+@keyframes shape-shift
+{
+    0% {transform: scale(1.0);}
+    10% {transform: scale(1.005);}
+    20% {transform: scale(1.01);}
+    30% {transform: scale(1.015);}
+    40% {transform: scale(1.02);}
+    50% {transform: scale(1.025);}
+    60% {transform: scale(1.03);}
+    70% {transform: scale(1.035);}
+    80% {transform: scale(1.04);}
+    90% {transform: scale(1.045);}
+    100% {transform: scale(1.05);}
+}
+
+h1
+{
+margin-left: 35%;
+padding-top: 2.75%;
+}
+h4
+{
+    transform: translateY(-50px);
+    color: rgb(135, 9, 19);
+    margin-left: 15px;
+}
+/* video customization */
+video
+{
+    margin: 15px;
+    padding: 15px;
+    border: 2px white;
+
+}
+/* specifically the text box on the top next to the video on the about page */
+#rightrightcolumn
+{
+    width: 50%;
+    height: 23%;
+    background-color: rgb(247, 247, 247);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    opacity: 1;
+    border-radius: 5%;
+    border: 3px solid black;
+    font-size: small;
+    overflow:auto;
+}
+/* the right column on the about page exclusively */
+#A-right-column
+{
+float: right;
+width: 65%;
+height: 1000px;
+background-color:LightGray;
+border: 3px solid black;
+border-radius: 5%;
+margin-right: 4%;
+}
+/* the section below the video on the about section. holds both the photo and text */
+#bottom-section
+{
+    width: 100%;
+    margin-top: 30px;
+    height:100%;
+}
+
+/* affects specifically the text next to the photo in the about section */
+#bottom-section p
+{
+    width: 50%;
+    height: 25%;
+    background-color: rgb(247, 247, 247);
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 15px;
+    opacity: 1;
+    border-radius: 5%;
+    border: 3px solid black;
+    overflow: auto;
+}
+/* affects specifically the photo next to the text in the about section */
+#bottom-section img
+{
+    float: right;
+    margin-right: 15%;
+    height: 25%;
+    width: 25%;
+}
+/* right column in the project section exclusively */
+#P-right-column
+{
+float: right;
+width: 65%;
+height: 1000px;
+background-color:LightGray;
+border: 3px solid black;
+border-radius: 5%;
+margin-right: 4%;
+}
